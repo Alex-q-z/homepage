@@ -6,7 +6,7 @@ nav: true
 nav_order: 3
 ---
 
-### Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models
+#### Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models
 
 - MIT MAS.S62 (Self-Evolving AI), guest speaker, September 2026
 - ByteDance Seed, July 2026
@@ -20,11 +20,11 @@ nav_order: 3
 - University of Hong Kong Networked AI Systems and Security (NAISS) Lab, November 2025
 - Hippocratic AI, November 2025
 
-### Agentic Plan Caching: Test-Time Memory for Fast and Cost-Efficient LLM Agents
+#### Agentic Plan Caching: Test-Time Memory for Fast and Cost-Efficient LLM Agents
 
 - Stanford SEAMS (Self-improving, Efficient and Accelerated Models and Systems) Retreat Workshop, June 2025
 
-### Caravan: Practical Online Learning of In-Network ML Models with Labeling Agents
+#### Caravan: Practical Online Learning of In-Network ML Models with Labeling Agents
 
 - Purdue University Computer Networking and Networked Systems Lab Seminar (PurNET Lab Seminar), February 2025
 - Stanford SEAMS (Self-improving, Efficient and Accelerated Models and Systems) + IBM Day, December 2024

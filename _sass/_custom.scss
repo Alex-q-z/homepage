@@ -14,12 +14,21 @@ html[data-theme="dark"] {
   --global-hover-color: #f08a87;
 }
 
-// Section headings on the publications page: a bit more space above each topic.
-.publications h2.bibliography {
+// Topic headings on the publications page.
+.publications h2.pub-topic {
   margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.publications h2.bibliography + p {
+.publications h2.pub-topic + p {
   color: var(--global-text-color-light);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+// Talk headings: paper titles read better a size down.
+.post h4 {
+  margin-top: 1.5rem;
 }

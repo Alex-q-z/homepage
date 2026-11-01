@@ -2,7 +2,7 @@
 layout: page
 permalink: /food/
 title: food & boba
-description: Places I like around the Bay Area and beyond.
+description: My map of food and boba spots.
 nav: true
 nav_order: 5
 ---
