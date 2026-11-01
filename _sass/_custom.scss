@@ -1,0 +1,25 @@
+/*******************************************************************************
+ * Site-specific style overrides.
+ * Loaded last from assets/css/main.scss, so rules here win over the theme.
+ ******************************************************************************/
+
+// Accent color: a deep cardinal red in light mode, a softer coral in dark mode.
+:root {
+  --global-theme-color: #8c1515;
+  --global-hover-color: #8c1515;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #f08a87;
+  --global-hover-color: #f08a87;
+}
+
+// Section headings on the publications page: a bit more space above each topic.
+.publications h2.bibliography {
+  margin-top: 2.5rem;
+}
+
+.publications h2.bibliography + p {
+  color: var(--global-text-color-light);
+  margin-bottom: 0.5rem;
+}

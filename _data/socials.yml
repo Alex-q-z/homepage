@@ -1,0 +1,8 @@
+# Social links shown on the About page and in search, in this order.
+# Supported keys: https://github.com/george-gca/jekyll-socials
+email: qizhengz@stanford.edu # protected from scrapers by `protect_email: true` in _config.yml
+scholar_userid: xnt6d5oAAAAJ # Google Scholar ID
+github_username: Alex-q-z # GitHub username
+linkedin_username: qizheng-alex-zhang # LinkedIn username
+cv_pdf: /QizhengZhang-CV.pdf # path to your CV PDF file
+rss_icon: true # RSS feed for the blog

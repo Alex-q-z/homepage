@@ -1,0 +1,437 @@
+---
+---
+
+% =============================================================================
+% How this file works
+% -----------------------------------------------------------------------------
+% Order matters: papers appear in the order listed here, within each topic.
+% Custom fields (hidden from the BibTeX popup):
+%   topic     = rsi | kvcache | other   -> section on the Publications page
+%   selected  = true                    -> also shown on the home page
+%   abbr      = venue badge, e.g. ICLR
+%   annotation= hover note next to the author list
+%   note      = extra line under the venue (awards, orals)
+%   award     = text revealed by the award button; award_name = button label
+%   arxiv / pdf / code / website / blog / slides / video = link buttons
+%   preview   = teaser image in assets/img/publication_preview/
+% Equal contribution: put * after the last name, e.g. {Zhang*, Qizheng}.
+% =============================================================================
+
+
+% ----------------------------- Recursive Self-Improvement --------------------
+
+@article{zhang2026sla,
+  title     = {Stateless Language Agents: Scaling Long-Horizon Automated Research},
+  author    = {Zhang*, Qizheng and Ji*, Changxiu and Sun*, Isaac and Li, Yuetai and Upasani, Shubhangi and Ruan, Sherry and Ma, Boyuan and Hong, Fenglu and Kamanuru, Vamsidhar and Lee, Yoonho and Mao, Yuzhen and Zhang, Genghan and Shao, Rulin and Mang, Qiuyang and Dimnaku, Andy and Hu, Changran and Poovendran, Radha and Olukotun, Kunle},
+  journal   = {arXiv preprint arXiv:2610.07625},
+  year      = {2026},
+  abbr      = {arXiv},
+  arxiv     = {2610.07625},
+  annotation= {* Equal contribution},
+  bibtex_show = {true},
+  selected  = {true},
+  topic     = {rsi}
+}
+
+@inproceedings{lee2026metaharness,
+  title     = {Meta-Harness: End-to-End Optimization of Model Harnesses},
+  author    = {Lee, Yoonho and Nair, Roshen and Zhang, Qizheng and Lee, Kangwook and Khattab, Omar and Finn, Chelsea},
+  booktitle = {Conference on Language Modeling (COLM)},
+  year      = {2026},
+  abbr      = {COLM},
+  note      = {Oral Presentation, ACM CAIS 2026 AI Agents for Discovery in the Wild Workshop},
+  arxiv     = {2603.28052},
+  code      = {https://github.com/stanford-iris-lab/meta-harness-tbench2-artifact},
+  website   = {https://yoonholee.com/meta-harness/},
+  bibtex_show = {true},
+  selected  = {true},
+  topic     = {rsi}
+}
+
+@inproceedings{zhang2026ace,
+  title     = {Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models},
+  author    = {Zhang*, Qizheng and Hu*, Changran and Upasani, Shubhangi and Ma, Boyuan and Hong, Fenglu and Kamanuru, Vamsidhar and Rainton, Jay and Wu, Chen and Ji, Mengmeng and Li, Hanchen and Thakker, Urmish and Zou, James and Olukotun, Kunle},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  abbr      = {ICLR},
+  note      = {Outstanding Paper Award (Lifelong Agents Workshop) and Runner-Up Best Paper Award (MemAgents Workshop), ICLR 2026},
+  award_name= {Deployments and media},
+  award     = {Deployed in production at [Anyshift](https://www.anyshift.io/blog/ace-in-production) and [SCX.ai](https://labs.scx.ai/ace). Featured in Lilian Weng's [blog](https://lilianweng.github.io/posts/2026-07-04-harness/) on harness engineering. Media: [VentureBeat](https://venturebeat.com/ai/ace-prevents-context-collapse-with-evolving-playbooks-for-self-improving-ai), [InfoQ](https://www.infoq.com/news/2025/10/agentic-context-eng/), [Discover AI](https://www.youtube.com/watch?v=elgYgPo_vY4), [SambaNova AI](https://sambanova.ai/blog/ace-open-sourced-on-github), [机器之心](https://zhuanlan.zhihu.com/p/1960345348426948708), [量子位](https://www.qbitai.com/2025/10/340612.html).},
+  arxiv     = {2510.04618},
+  code      = {https://github.com/ace-agent/ace},
+  website   = {https://ace-agent.github.io/},
+  annotation= {* Equal contribution},
+  bibtex_show = {true},
+  selected  = {true},
+  topic     = {rsi}
+}
+
+
+% ----------------------------- KV Cache and LLM Inference --------------------
+
+@inproceedings{yao2025cacheblend,
+  title     = {CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion},
+  author    = {Yao, Jiayi and Li, Hanchen and Liu, Yuhan and Ray, Siddhant and Cheng, Yihua and Zhang, Qizheng and Du, Kuntai and Lu, Shan and Jiang, Junchen},
+  booktitle = {ACM European Conference on Computer Systems (EuroSys)},
+  year      = {2025},
+  abbr      = {EuroSys},
+  note      = {Best Paper Award. Fast-tracked to ACM Transactions on Computer Systems},
+  arxiv     = {2405.16444},
+  code      = {https://github.com/YaoJiayi/CacheBlend},
+  bibtex_show = {true},
+  selected  = {true},
+  topic     = {kvcache}
+}
+
+@inproceedings{liu2024cachegen,
+  title     = {CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving},
+  author    = {Liu, Yuhan and Li, Hanchen and Cheng, Yihua and Ray, Siddhant and Huang, Yuyang and Zhang, Qizheng and Du, Kuntai and Yao, Jiayi and Lu, Shan and Ananthanarayanan, Ganesh and Maire, Michael and Hoffmann, Henry and Holtzman, Ari and Jiang, Junchen},
+  booktitle = {ACM Special Interest Group on Data Communication (SIGCOMM)},
+  year      = {2024},
+  abbr      = {SIGCOMM},
+  arxiv     = {2310.07240},
+  code      = {https://github.com/UChi-JCL/CacheGen},
+  bibtex_show = {true},
+  topic     = {kvcache}
+}
+
+
+% ----------------------------- Other Papers ----------------------------------
+
+@article{ji2026sentry,
+  title     = {Sentry: Learning to Recover from LLM Agent Failures at Test Time},
+  author    = {Ji*, Changxiu and Lu*, Amy and Zhang, Qizheng and Olukotun, Kunle},
+  journal   = {arXiv preprint arXiv:2610.02994},
+  year      = {2026},
+  abbr      = {arXiv},
+  arxiv     = {2610.02994},
+  code      = {https://github.com/nuglifeleoji/Sentry},
+  annotation= {* Equal contribution},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@article{xu2026leap,
+  title     = {LEAP: Learning Efficient Action Proposals For LLM Agents},
+  author    = {Xu, Zhen and Zhang, Qizheng and Wan, Gerry and Zhu, Shang and Zhang, Ce},
+  journal   = {arXiv preprint arXiv:2610.02670},
+  year      = {2026},
+  abbr      = {arXiv},
+  arxiv     = {2610.02670},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@article{mao2026delm,
+  title     = {Decentralized Multi-Agent Systems with Shared Context},
+  author    = {Mao, Yuzhen and Gu, Jerry and Chauhan, Aadi and Zhang, Qizheng and Kang, Hangoo and Mirhoseini, Azalia},
+  journal   = {arXiv preprint arXiv:2606.10662},
+  year      = {2026},
+  abbr      = {arXiv},
+  arxiv     = {2606.10662},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{shen2026seta,
+  title     = {SETA: Scaling Environments for Terminal Agents},
+  author    = {Shen, Qijia and Huang, Zhiqi and Kamanuru, Vamsidhar and Aliev, Aznaur and Rainton, Jay and Awelkair, Ahmed and Zeng, Zhichen and Li, Jiajun and Dong, Shi and Yuan, Yueming and Ma, Boyuan and Zhang, Qizheng and Fu, Jiwei and Mao, Yuzhen and Fan, Wendong and Nie, Ping and Torr, Philip and Ghanem, Bernard and Hu, Changran and Li, Jonathan Lingjie and Thakker, Urmish and Li, Guohao},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS), Evaluations and Datasets Track},
+  year      = {2026},
+  abbr      = {NeurIPS},
+  arxiv     = {2607.10891},
+  website   = {https://huggingface.co/datasets/camel-ai/SETA-Env},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{gu2026peek,
+  title     = {PEEK: Context Map as an Orientation Cache for Long-Context LLM Agents},
+  author    = {Gu, Zhuohan and Zhang, Qizheng and Khattab, Omar and Madden, Samuel},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026},
+  abbr      = {NeurIPS},
+  arxiv     = {2605.19932},
+  code      = {https://github.com/zhuohangu/peek},
+  blog      = {https://zhuohangu.github.io/blog-post-peek/},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{he2026frontiersmith,
+  title     = {FrontierSmith: Synthesizing Open-Ended Coding Problems at Scale},
+  author    = {He, Runyuan and Mang, Qiuyang and Zhou, Shang and Liu, Kaiyuan and Li, Hanchen and Mao, Huanzhi and Zhang, Qizheng and Li, Zerui and Peng, Bo and Cheng, Lufeng and Fu, Tianfu and Wang, Yichuan and Chai, Wenhao and Shang, Jingbo and Dimakis, Alex and Gonzalez, Joseph E. and Cheung, Alvin},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026},
+  abbr      = {NeurIPS},
+  note      = {Spotlight},
+  arxiv     = {2605.14445},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@article{kim2026sieve,
+  title     = {Sieve: Dynamic Expert-Aware PIM Acceleration for Evolving Mixture-of-Experts Models},
+  author    = {Kim, Jungwoo and Lacouture, Rubens and Zhang, Genghan and Sohn, Gina and Zhang, Qizheng and Gandhi, Swapnil and Kozyrakis, Christos and Olukotun, Kunle},
+  journal   = {arXiv preprint arXiv:2605.11277},
+  year      = {2026},
+  abbr      = {arXiv},
+  arxiv     = {2605.11277},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@article{agarwal2026switchcraft,
+  title     = {Switchcraft: AI Model Router for Agentic Tool Calling},
+  author    = {Agarwal, Sharad and Namyar, Pooria and Wolman, Alec and Ambavat, Rahul and Gupta, Ankur and Zhang, Qizheng},
+  journal   = {arXiv preprint arXiv:2605.07112},
+  year      = {2026},
+  abbr      = {arXiv},
+  arxiv     = {2605.07112},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{li2026combee,
+  title     = {Combee: Scaling Prompt Learning for Self-Improving Language Model Agents},
+  author    = {Li*, Hanchen and He*, Runyuan and Zhang, Qizheng and Ji, Changxiu and Mang, Qiuyang and Chen, Xiaokun and Agrawal, Lakshya A. and Liao, Wei-Liang and Yang, Eric and Cheung, Alvin and Zou, James and Olukotun, Kunle and Stoica, Ion and Gonzalez, Joseph E.},
+  booktitle = {Conference on Language Modeling (COLM)},
+  year      = {2026},
+  abbr      = {COLM},
+  arxiv     = {2604.04247},
+  annotation= {* Equal contribution},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{zhang2026curriculum,
+  title     = {Learning What to Learn: Curriculum Curation for Test-Time Agent Learning},
+  author    = {Zhang*, Qizheng and Ruan*, Sherry and Upasani, Shubhangi and Hong, Fenglu and Ji, Changxiu and Hu, Changran and Li, Bo and Li, Hanchen and Olukotun, Kunle},
+  booktitle = {ICLR Workshop on Memory for LLM-Based Agentic Systems},
+  year      = {2026},
+  abbr      = {ICLR-W},
+  pdf       = {https://openreview.net/forum?id=zCz7yXeaYF},
+  annotation= {* Equal contribution},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{upasani2026manyshot,
+  title     = {Test-Time Adaptation via Many-Shot Prompting: Benefits, Limits, and Pitfalls},
+  author    = {Upasani, Shubhangi and Wu, Chen and Rainton, Jay and Hu, Changran and Zhang, Qizheng and Li, Bo and Thakker, Urmish},
+  booktitle = {ICLR Workshop on AI with Recursive Self-Improvement},
+  year      = {2026},
+  abbr      = {ICLR-W},
+  pdf       = {https://openreview.net/forum?id=Ne0s3UOzdB},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@article{hle2026nature,
+  title     = {A Benchmark of Expert-Level Academic Questions to Assess AI Capabilities},
+  author    = {{Center for AI Safety} and {Scale AI} and {HLE Contributors Consortium}},
+  journal   = {Nature},
+  volume    = {649},
+  number    = {8099},
+  pages     = {1139--1146},
+  year      = {2026},
+  abbr      = {Nature},
+  html      = {https://www.nature.com/articles/s41586-025-09962-4},
+  annotation= {I am a member of the HLE Contributors Consortium.},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@article{jiang2025adaptation,
+  title     = {Adaptation of Agentic AI: A Survey of Post-Training, Memory, and Skills},
+  author    = {Jiang, Pengcheng and Lin, Jiacheng and {…} and Zhang, Qizheng and {…} and Han, Jiawei},
+  journal   = {arXiv preprint arXiv:2512.16301},
+  year      = {2025},
+  abbr      = {arXiv},
+  arxiv     = {2512.16301},
+  annotation= {35 authors in total},
+  topic     = {other}
+}
+
+@inproceedings{mang2026frontiercs,
+  title     = {FrontierCS: Evolving Challenges for Evolving Intelligence},
+  author    = {Mang, Qiuyang and Chai, Wenhao and {…} and Zhang, Qizheng and {…} and Cheung, Alvin},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2026},
+  abbr      = {ICML},
+  arxiv     = {2512.15699},
+  code      = {https://github.com/FrontierCS/Frontier-CS},
+  annotation= {52 authors in total},
+  topic     = {other}
+}
+
+@article{feng2025evicpress,
+  title     = {EvicPress: Joint KV-Cache Compression and Eviction for Efficient LLM Serving},
+  author    = {Feng, Shaoting and Liu, Yuhan and Chen, Xiaokun and Li, Hanchen and Shen, Samuel and Du, Kuntai and Gu, Zhuohan and Zhang, Rui and Huang, Yuyang and Cheng, Yihua and Yao, Jiayi and Zhang, Qizheng and Ananthanarayanan, Ganesh and Jiang, Junchen},
+  journal   = {arXiv preprint arXiv:2512.14946},
+  year      = {2025},
+  abbr      = {arXiv},
+  arxiv     = {2512.14946},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@article{li2025continuum,
+  title     = {Continuum: Efficient and Robust Multi-Turn LLM Agent Scheduling with KV Cache Time-to-Live},
+  author    = {Li, Hanchen and Mang, Qiuyang and He, Runyuan and Zhang, Qizheng and Mao, Huanzhi and Chen, Xiaokun and Cheung, Alvin and Gonzalez, Joseph and Stoica, Ion},
+  journal   = {arXiv preprint arXiv:2511.02230},
+  year      = {2025},
+  abbr      = {arXiv},
+  arxiv     = {2511.02230},
+  code      = {https://github.com/Hanchenli/vllm-continuum},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{zhu2026flowrl,
+  title     = {FlowRL: Matching Reward Distributions for LLM Reasoning},
+  author    = {Zhu, Xuekai and Cheng, Daixuan and Zhang, Dinghuai and Li, Hengli and Zhang, Kaiyan and Jiang, Che and Sun, Youbang and Hua, Ermo and Zuo, Yuxin and Lv, Xingtai and Zhang, Qizheng and Chen, Lin and Shao, Fanghao and Xue, Bo and Song, Yunchong and Yang, Zhenjie and Cui, Ganqu and Ding, Ning and Gao, Jianfeng and Liu, Xiaodong and Zhou, Bowen and Mei, Hongyuan and Lin, Zhouhan},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  abbr      = {ICLR},
+  arxiv     = {2509.15207},
+  code      = {https://github.com/Xuekai-Zhu/FlowRL},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{du2025bridge,
+  title     = {Agentic Bridge Framework: Closing the Gap Between Agentic Capability and Performance Benchmarks},
+  author    = {Du, Yun and Lacouture, Rubens and Zhang, Qizheng and Zhang, Genghan and Zhao, Tian and Olukotun, Kunle},
+  booktitle = {NeurIPS Workshop on Machine Learning for Systems},
+  year      = {2025},
+  abbr      = {NeurIPS-W},
+  pdf       = {https://openreview.net/pdf?id=Rv664iOMNv},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{zhou2025lowra,
+  title     = {LowRA: Accurate and Efficient LoRA Fine-Tuning of LLMs under 2 Bits},
+  author    = {Zhou, Zikai and Zhang, Qizheng and Kumbong, Hermann and Olukotun, Kunle},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year      = {2025},
+  abbr      = {ICML},
+  arxiv     = {2502.08141},
+  code      = {https://github.com/stanford-ppl/LowRA},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{zhang2025apc,
+  title     = {Agentic Plan Caching: Test-Time Memory for Fast and Cost-Efficient LLM Agents},
+  author    = {Zhang, Qizheng and Wornow, Michael and Olukotun, Kunle},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  abbr      = {NeurIPS},
+  arxiv     = {2506.14852},
+  bibtex_show = {true},
+  selected  = {true},
+  topic     = {other}
+}
+
+@inproceedings{zhang2024caravan,
+  title     = {Caravan: Practical Online Learning of In-Network ML Models with Labeling Agents},
+  author    = {Zhang, Qizheng and Imran, Ali and Bardhi, Enkeleda and Swamy, Tushar and Zhang, Nathan and Shahbaz, Muhammad and Olukotun, Kunle},
+  booktitle = {USENIX Symposium on Operating Systems Design and Implementation (OSDI)},
+  year      = {2024},
+  abbr      = {OSDI},
+  note      = {SRC JUMP 2.0 Best Paper Award},
+  pdf       = {https://www.usenix.org/system/files/osdi24-zhang-qizheng.pdf},
+  code      = {https://github.com/Per-Packet-AI/Caravan-Artifact-OSDI24},
+  bibtex_show = {true},
+  selected  = {true},
+  topic     = {other}
+}
+
+@inproceedings{zhang2024dam,
+  title     = {The Dataflow Abstract Machine Simulator Framework},
+  author    = {Zhang, Nathan and Lacouture, Rubens and Sohn, Gina and Mure, Paul and Zhang, Qizheng and Kjolstad, Fredrik and Olukotun, Kunle},
+  booktitle = {ACM/IEEE International Symposium on Computer Architecture (ISCA)},
+  year      = {2024},
+  abbr      = {ISCA},
+  note      = {Distinguished Artifact Award},
+  pdf       = {https://ppl.stanford.edu/papers/DAM_ISCA24.pdf},
+  code      = {https://github.com/stanford-ppl/DAM-RS},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{cheng2024grace,
+  title     = {GRACE: Loss-Resilient Real-Time Video through Neural Codecs},
+  author    = {Cheng, Yihua and Zhang, Ziyi and Li, Hanchen and Arapin, Anton and Zhang, Yue and Zhang, Qizheng and Liu, Yuhan and Du, Kuntai and Zhang, Xu and Yan, Francis Y. and Mazumdar, Amrita and Feamster, Nick and Jiang, Junchen},
+  booktitle = {USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  year      = {2024},
+  abbr      = {NSDI},
+  arxiv     = {2305.12333},
+  code      = {https://github.com/UChi-JCL/Grace},
+  website   = {https://uchi-jcl.github.io/grace.html},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{du2023oneadapt,
+  title     = {OneAdapt: Fast Adaptation for Deep Learning Applications via Backpropagation},
+  author    = {Du, Kuntai and Liu, Yuhan and Hao, Yitian and Zhang, Qizheng and Wang, Haodong and Huang, Yuyang and Ananthanarayanan, Ganesh and Jiang, Junchen},
+  booktitle = {ACM Symposium on Cloud Computing (SoCC)},
+  year      = {2023},
+  abbr      = {SoCC},
+  arxiv     = {2310.02422},
+  code      = {https://github.com/KuntaiDu/OneAdapt},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{li2023optimizing,
+  title     = {Optimizing Real-Time Video Experience with Data Scalable Codec},
+  author    = {Li*, Hanchen and Cheng*, Yihua and Zhang, Ziyi and Zhang, Qizheng and Arapin, Anton and Feamster, Nick and Mazumdar, Amrita},
+  booktitle = {ACM SIGCOMM Workshop on Emerging Multimedia Systems (EMS)},
+  year      = {2023},
+  abbr      = {SIGCOMM-W},
+  html      = {https://dl.acm.org/doi/10.1145/3609395.3611108},
+  annotation= {* Equal contribution},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{du2022accmpeg,
+  title     = {AccMPEG: Optimizing Video Encoding for Video Analytics},
+  author    = {Du, Kuntai and Zhang, Qizheng and Arapin, Anton and Wang, Haodong and Xia, Zhengxu and Jiang, Junchen},
+  booktitle = {Conference on Machine Learning and Systems (MLSys)},
+  year      = {2022},
+  abbr      = {MLSys},
+  arxiv     = {2204.12534},
+  code      = {https://github.com/KuntaiDu/AccMPEG},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{zhang2022saliency,
+  title     = {Understanding the Potential of Server-Driven Edge Video Analytics},
+  author    = {Zhang, Qizheng and Du, Kuntai and Agarwal, Neil and Netravali, Ravi and Jiang, Junchen},
+  booktitle = {ACM International Workshop on Mobile Computing Systems and Applications (HotMobile)},
+  year      = {2022},
+  abbr      = {HotMobile},
+  pdf       = {https://people.cs.uchicago.edu/~junchenj/docs/saliency-hotmobile.pdf},
+  code      = {https://github.com/Alex-q-z/saliency-HotMobile22},
+  bibtex_show = {true},
+  topic     = {other}
+}
+
+@inproceedings{du2020dds,
+  title     = {Server-Driven Video Streaming for Deep Learning Inference},
+  author    = {Du*, Kuntai and Pervaiz*, Ahsan and Yuan, Xin and Chowdhery, Aakanksha and Zhang, Qizheng and Hoffmann, Henry and Jiang, Junchen},
+  booktitle = {ACM Special Interest Group on Data Communication (SIGCOMM)},
+  year      = {2020},
+  abbr      = {SIGCOMM},
+  pdf       = {https://people.cs.uchicago.edu/~junchenj/docs/DDS-Sigcomm20.pdf},
+  code      = {https://github.com/KuntaiDu/dds},
+  annotation= {* Equal contribution},
+  bibtex_show = {true},
+  topic     = {other}
+}

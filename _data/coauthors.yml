@@ -1,0 +1,7 @@
+# Co-author links. Names listed here become links in the publication list.
+# Keys are last names in lowercase, without accents. Example:
+#
+# "olukotun":
+#   - firstname: ["Kunle"]
+#     url: https://example.com/
+{}
